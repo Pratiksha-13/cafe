@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body{
+   background-image:url("/assets/menu.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;	
+}
+
+</style>
+
+	
+</head>
+<body>
+
+
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @menu.name %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @menu.quantity %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @menu.price %>
+</p>
+
+<%= link_to 'Edit', edit_menu_path(@menu) %> |
+<%= link_to 'Back', menus_path %>
+</body>
+</html>

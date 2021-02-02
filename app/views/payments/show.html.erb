@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body{
+   background-image:url("/assets/img2.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;  
+}
+
+</style>
+</head>
+<body>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Customer name:</strong>
+  <%= @payment.customer_name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @payment.address %>
+</p>
+
+<p>
+  <strong>Total amount:</strong>
+  <%= @payment.total_amount %>
+</p>
+
+<p>
+  <strong>Mobile no:</strong>
+  <%= @payment.mobile_no %>
+</p>
+
+<p>
+  <strong>Payment mode:</strong>
+  <%= @payment.payment_mode %>
+</p>
+
+<%= link_to 'Edit', edit_payment_path(@payment) %> |
+<%= link_to 'Back', payments_path %>
+</body>
+</html>

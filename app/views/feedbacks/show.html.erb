@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+
+body{
+   background-image:url("/assets/img2.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;	
+}
+
+</style>
+</head>
+<body>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Customer name:</strong>
+  <%= @feedback.customer_name %>
+</p>
+
+<p>
+  <strong>Product name:</strong>
+  <%= @feedback.product_name %>
+</p>
+
+<p>
+  <strong>Star:</strong>
+  <%= @feedback.star %>
+</p>
+
+<p>
+  <strong>Suggestions:</strong>
+  <%= @feedback.suggestions %>
+</p>
+
+<%= link_to 'Edit', edit_feedback_path(@feedback) %> |
+<%= link_to 'Back', feedbacks_path %>
+</body>
+</html>

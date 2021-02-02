@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+
+body{
+   background-image:url("/assets/login.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;	
+}
+
+</style>
+</head>
+<body>
+
+<h1>New User</h1>
+
+<%= render 'form', user: @user %>
+
+<%= link_to 'Back', users_path %>
+
+<%=link_to "Back",controller:"home" ,action:'index' , class:"back-link"%>
+</body>
+</html>

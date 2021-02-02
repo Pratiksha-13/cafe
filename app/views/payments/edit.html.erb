@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body{
+   background-image:url("/assets/img2.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;	
+}
+
+</style>
+
+	
+</head>
+<body>
+
+
+<h1>Editing Payment</h1>
+
+<%= render 'form', payment: @payment %>
+
+<%= link_to 'Show', @payment %> |
+<%= link_to 'Back', payments_path %>
+</body>
+</html>

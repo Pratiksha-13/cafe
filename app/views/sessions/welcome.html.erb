@@ -1,0 +1,75 @@
+<html>
+<head>
+	<style>
+
+body{
+   background-image:url("/assets/img1.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;	
+}
+
+.navbar {
+  overflow: hidden; /* Hide overflow */
+  background-color: #333; /* Dark background color */
+  background-size: cover;
+}
+
+.navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 20px; /* Add some padding */
+  text-decoration: none;/* Remove underline */
+}
+
+.navbar a.right {
+  float: right; /* Float a link to the right */
+}
+
+
+.header h1 {
+  font-size: 40px;
+  color:red;
+}
+
+</style>
+</head>
+<body>
+	<div class="header">
+    <center><h1>Welcome to Cafeteria</h1></center> 
+  </div>
+
+
+<div class="navbar">
+  <a href="menus">menus</a>
+  <a href="payments">payments</a>
+  <a href="feedbacks">feedbacks</a>
+  <a href="home/dish">Dishes</a>
+  <a href="home/contact">Contact Us</a>
+  <%=link_to "Log Out" , controller:"sessions" ,action:"destroy" %>
+</div>
+
+
+
+<!---<div style="width: 100px; float:left; height:50px; background:yellow; margin:10px">
+<%=link_to "menus" , controller:"menus" ,action:"index" %>
+</div>
+
+
+<div style="width: 100px; float:left; height:50px; background:yellow; margin:10px">
+<%=link_to "payments" , controller:"payments" ,action:"index" %>
+</div>
+
+<div style="width: 100px; float:left; height:50px; background:yellow; margin:10px">
+<%=link_to "feedbacks" , controller:"feedbacks" ,action:"index" %>
+</div>
+
+<div style="width: 100px; float:left; height:50px; background:yellow; margin:10px">
+<%=link_to "Log Out" , controller:"sessions" ,action:"destroy" %>
+</div>-->
+<br>
+
+</body>
+</html>
+

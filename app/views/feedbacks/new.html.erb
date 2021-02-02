@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+
+body{
+   background-image:url("/assets/img2.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;	
+}
+
+</style>
+</head>
+<body>
+<h1>New Feedback</h1>
+
+<%= render 'form', feedback: @feedback %>
+
+<%= link_to 'Back', feedbacks_path %>
+</body>
+</html>
